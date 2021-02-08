@@ -1,0 +1,36 @@
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-item__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $logo-color;
+  border-radius: 4px;
+
+  list-style: none;
+  color: $logo-color;
+
+  fill: currentColor;
+
+  transition-property: border, color;
+  transition-duration: $animation-timing;
+  transition-timing-function: $cubic-bezier;
+}
+
+.client-item__link:hover,
+.client-item__link:focus {
+  border: 1px solid $accent-color;
+  color: $accent-color;
+  fill: currentColor;
+  outline: none;
+}
