@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    /> -->
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -20,10 +16,20 @@
 
     <header class="header">
       <div class="container site-nav">
+        <a href="#" class="logo">
+          Web<span class="logo__item">Studio</span>
+        </a>
+          <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          
+              <use class="menu-icon" href="./images/symbol-defs.svg#icon-menu"></use>
+              <use class="close-icon" href="./images/symbol-defs.svg#icon-menu-close"></use>
+          
+            </svg>
+          </button>
+        <div class="mobile-menu" id="mobile-menu" data-menu>
         <nav class="site-nav">
-          <a href="#" class="logo">
-            Web<span class="logo__item">Studio</span>
-          </a>
+          
           <ul class="nav-list">
             <li class="nav-page">
               <a href="./index.html" class="nav-page__link nav-page__link--current">Студия</a>
@@ -35,23 +41,46 @@
               <a href="#" class="nav-page__link">Контакты</a>
             </li>
           </ul>
+
+
         </nav>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <a href="mailto:info@devstudio.com" class="contact-item__link">
-              <svg class="contact-item__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-item">
-            <a href="tel:380961111111" class="contact-item__link">
-              <svg class="contact-item__icon" width="10" height="16">
-              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-            </svg>+38 096 111 11 11</a>
-          </li>
-        </ul>
+        <div class="header-contacts-block">
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <a href="mailto:info@devstudio.com" class="contact-item__link contact-item__link--inverse">
+                <svg class="contact-item__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-item">
+              <a href="tel:380961111111" class="contact-item__link">
+                <svg class="contact-item__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>+38 096 111 11 11</a>
+            </li>
+          </ul>
+
+          <ul class="menu-socials">
+            <li class="menu-socials__item">
+              <a href="#" class="menu-socials__link">Instagram</a>
+              <span class="menu-socials__divider"></span>
+            </li>
+            <li class="menu-socials__item">
+              <a href="#" class="menu-socials__link">Twitter</a>
+              <span class="menu-socials__divider"></span>
+            </li>
+            <li class="menu-socials__item">
+              <a href="#" class="menu-socials__link">Facebook</a>
+              <span class="menu-socials__divider"></span>
+            </li>
+            <li class="menu-socials__item">
+              <a href="#" class="menu-socials__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       </div>
     </header>
     <main>
@@ -131,11 +160,13 @@
           <ul class="services-list">
             <li class="services-item">
               <div class="services-item__container">
-              <img
-                src="./images/work1.jpg"
-                alt="Планшет и клавиатура на рабочем столе"
-                width="370"
                 
+              <img
+                alt="Планшет и клавиатура на рабочем столе"
+                src="./images/work-desctop1-1x.jpg" srcset="
+                                  ./images/work-desctop1-1x.jpg 1x,
+                                  ./images/work-desctop1-2x.jpg 2x"
+                width="370"
               />
               <div class="services-item__overlay">
                 <p class="services-item__label">Десктопные приложения</p>
@@ -144,11 +175,12 @@
             </li>
             <li class="services-item">
               <div class="services-item__container">
-              <img
-                src="./images/work2.jpg"
-                alt="Работа с ноутбуком и смартфоном"
-                width="370"
-              />
+              <img 
+                  alt="Работа с ноутбуком и смартфоном" 
+                  src="./images/work-desctop2-1x.jpg" srcset="
+                                   ./images/work-desctop2-1x.jpg 1x,
+                                   ./images/work-desctop2-2x.jpg 2x" 
+                  width="370" />
               <div class="services-item__overlay">
                 <p class="services-item__label">Мобильные приложения</p>
               </div>
@@ -156,11 +188,11 @@
             </li>
             <li class="services-item">
               <div class="services-item__container">
-              <img
-                src="./images/work3.jpg"
-                alt="Палитра цветов на экране планшета"
-                width="370"
-              />
+              <img alt="Палитра цветов на экране планшета" 
+                   src="./images/work-desctop3-1x.jpg" srcset="
+                                    ./images/work-desctop3-1x.jpg 1x,
+                                    ./images/work-desctop3-2x.jpg 2x"
+                   width="370" />
               <div class="services-item__overlay">
                 <p class="services-item__label">Дизайнерские решения</p>
               </div>
@@ -177,11 +209,25 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="members-list">
             <li class="member-card">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./images/team-mobile1-1x.jpg 1x,
+                                      ./images/team-mobile1-2x.jpg 2x
+                                  ">
+                                    
+                <source media="(min-width: 768px) and (max-width: 1199px)" srcset="
+                                    ./images/team-tablet1-1x.jpg 1x,
+                                    ./images/team-tablet1-2x.jpg 2x
+                                  ">
+                <source media="(min-width: 1200px)" srcset="
+                                    ./images/team-desctop1-1x.jpg 1x,
+                                    ./images/team-desktop1-2x.jpg 2x
+                                  ">
               <img
-                src="./images/team1.jpg"
+                src="./images/team-mobile1-1x.jpg"
                 alt="Фото продукт дизайнера"
                 width="270"
               />
+              </picture>
               <div class="member-descr">
                 <h3 class="member-descr__name">Игорь Демьяненко</h3>
                 <p class="member-descr__post">Product Designer</p>
@@ -222,11 +268,24 @@
               </div>
             </li>
             <li class="member-card">
-              <img
-                src="./images/team2.jpg"
-                alt="Фото Frontend девелопера"
-                width="270"
-              />
+              <picture>
+                <source media="(max-width: 767px)" srcset="
+                                    ./images/team-mobile2-1x.jpg 1x,
+                                    ./images/team-mobile2-2x.jpg 2x
+                                  ">
+                <source media="(min-width: 768px) and (max-width: 1199px)" srcset="
+                                     ./images/team-tablet2-1x.jpg 1x,
+                                     ./images/team-tablet2-2x.jpg 2x
+                                  ">
+                <source media="(min-width: 1200px)" srcset="
+                                    ./images/team-desctop2-1x.jpg 1x,
+                                    ./images/team-desktop2-2x.jpg 2x
+                                  ">
+                <img src="./images/team-mobile2-1x.jpg" 
+                    alt="Фото Frontend девелопера" 
+                    width="270" />
+              </picture>
+              
               <div class="member-descr">
                 <h3 class="member-descr__name">Ольга Репина</h3>
                 <p class="member-descr__post">Frontend Developer</p>
@@ -267,11 +326,24 @@
               </div>
             </li>
             <li class="member-card">
-              <img
-                src="./images/team3.jpg"
-                alt="Фото маркетолога"
-                width="270"
-              />
+              <picture>
+                <source media="(max-width: 767px)" srcset="
+                                    ./images/team-mobile3-1x.jpg 1x,
+                                    ./images/team-mobile3-2x.jpg 2x
+                           ">
+                <source media="(min-width: 768px) and (max-width: 1199px)" srcset="
+                                    ./images/team-tablet3-1x.jpg 1x,
+                                    ./images/team-tablet3-2x.jpg 2x
+                                                                  ">
+                <source media="(min-width: 1200px)" srcset="
+                                    ./images/team-desctop3-1x.jpg 1x,
+                                    ./images/team-desktop3-2x.jpg 2x
+                                                                  ">
+                <img src="./images/team-mobile3-1x.jpg" 
+                      alt="Фото маркетолога" 
+                      width="270" />
+              </picture>
+        
               <div class="member-descr">
                 <h3 class="member-descr__name">Николай Тарасов</h3>
                 <p class="member-descr__post">Marketing</p>
@@ -312,11 +384,24 @@
               </div>
             </li>
             <li class="member-card">
-              <img
-                src="./images/team4.jpg"
-                alt="Фото UI дизайнера "
-                width="270"
-              />
+              <picture>
+                <source media="(max-width: 767px)" srcset="
+                                    ./images/team-mobile4-1x.jpg 1x,
+                                    ./images/team-mobile4-2x.jpg 2x
+                                 ">
+                <source media="(min-width: 768px) and (max-width: 1199px)" srcset="
+                                    ./images/team-tablet4-1x.jpg 1x,
+                                    ./images/team-tablet4-2x.jpg 2x
+                                 ">
+                <source media="(min-width: 1200px)" srcset="
+                                    ./images/team-desctop4-1x.jpg 1x,
+                                    ./images/team-desktop4-2x.jpg 2x
+                                 ">
+                <img src="./images/team-mobile4-1x.jpg" 
+                      alt="Фото UI Дизайнера" 
+                      width="270" />
+              </picture>
+              
               <div class="member-descr">
                 <h3 class="member-descr__name">Михаил Ермаков</h3>
                 <p class="member-descr__post">UI Designer</p>
@@ -411,7 +496,7 @@
             </ul>
             </div>
       </section>
-    </main>
+    </main> 
 
     <!-- Футер -->
 
@@ -467,7 +552,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </div> 
 
       <!-- форма футера -->
 
@@ -485,7 +570,7 @@
             </button>          
         </form>
 
-      </div>
+      </div> 
       </div>
       </div>
     </footer>
@@ -581,5 +666,6 @@
       </div>
     
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

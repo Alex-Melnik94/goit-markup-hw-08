@@ -33,4 +33,8 @@
   padding: 10px 29px;
   margin-left: 12px;
   text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0;
+  }
 }
