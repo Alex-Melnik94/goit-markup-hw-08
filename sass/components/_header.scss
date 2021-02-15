@@ -103,67 +103,67 @@
       color: $accent-color;
     }
   }
-}
 
-.contacts-list {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-bottom: 64px;
-}
-
-.contact-item:not(:first-child) {
-  margin-bottom: 32px;
-}
-
-.contact-item__link {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: $accent-color;
-  text-decoration: none;
-
-  @media screen and (max-width: 420px) {
-    font-size: 28px;
+  .contacts-list {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
   }
-}
 
-.contact-item__link--inverse {
-  font-size: 24px;
-  color: $primary-text-color;
-}
-
-.contact-item__icon {
-  display: none;
-}
-
-.menu-socials {
-  display: flex;
-  text-align: center;
-  justify-content: flex-start;
-}
-
-.menu-socials__link {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: $accent-color;
-  text-decoration: none;
-
-  @media screen and (max-width: 420px) {
-    font-size: 14px;
+  .contact-item:not(:first-child) {
+    margin-bottom: 32px;
   }
-}
 
-.menu-socials__divider {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  margin-right: 10px;
-  margin-left: 10px;
+  .contact-item__link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    text-decoration: none;
 
-  @media screen and (max-width: 420px) {
-    margin-right: 5px;
-    margin-left: 5px;
+    @media screen and (max-width: 420px) {
+      font-size: 28px;
+    }
+  }
+
+  .contact-item__link--inverse {
+    font-size: 24px;
+    color: $primary-text-color;
+  }
+
+  .contact-item__icon {
+    display: none;
+  }
+
+  .menu-socials {
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+  }
+
+  .menu-socials__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    text-decoration: none;
+
+    @media screen and (max-width: 420px) {
+      font-size: 14px;
+    }
+  }
+
+  .menu-socials__divider {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
+    margin-left: 10px;
+
+    @media screen and (max-width: 420px) {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
   }
 }
 
